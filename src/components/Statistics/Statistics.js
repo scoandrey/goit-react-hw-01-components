@@ -40,7 +40,7 @@ class Statistics extends Component {
 
 export default Statistics;
 
-Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
-};
+// Statistics.propTypes = {
+//   title: PropTypes.string.isRequired,
+//   stats: PropTypes.number.isRequired,
+// };
