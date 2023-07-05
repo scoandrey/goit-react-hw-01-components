@@ -26,7 +26,6 @@ td {
 tbody tr:nth-child(even) {
   background-color: lightgrey;
 }
-
 table {
   background-color: white;
 }
