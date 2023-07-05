@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Profile.css';
-import data from '../data.json'
+
 
 class Profile extends Component {
   render() {
