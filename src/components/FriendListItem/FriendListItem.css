@@ -5,7 +5,7 @@
 
 .friend-item {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   list-style-type: none;
   border: 1px solid #afb1b8;
@@ -24,6 +24,7 @@
 .offLineRed {
   color: red;
 }
+
 .avatar {
   margin-left: 12px;
   margin-right: 12px;
