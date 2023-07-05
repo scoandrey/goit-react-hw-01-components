@@ -1,0 +1,29 @@
+.status {
+  display: block;
+  background-color: aqua;
+}
+.friend-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style-type: none;
+  border: 1px solid #afb1b8;
+
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.friend-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.onlineGreen {
+  color: green;
+}
+
+.offLineRed {
+  color: red;
+}
+
+.avatar {
+  margin-left: 12px;
+  margin-right: 12px;
+}
