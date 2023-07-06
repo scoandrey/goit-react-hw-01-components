@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './TransactionHistory.css';
 
 class TransactionHistory extends Component {
-  static defaulprops = {
+  static propTypes = {
     items: PropTypes.array,
   };
   render() {

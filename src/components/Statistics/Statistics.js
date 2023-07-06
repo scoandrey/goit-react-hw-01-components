@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Statistics.css';
 class Statistics extends Component {
-  static defaulprops = {
+  static propTypes = {
     title: PropTypes.string,
     stats: PropTypes.array.isRequired,
   };

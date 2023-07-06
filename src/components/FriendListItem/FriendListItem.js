@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './FriendListItem.css';
 
 class FriendListItem extends Component {
-  static defaulprops = {
+  static propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string,
     isOnline: PropTypes.bool,

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './Profile.css';
 
 class Profile extends Component {
-  static defaultProps = {
+  static propTypes = {
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,

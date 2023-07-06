@@ -4,7 +4,7 @@ import FriendListItem from 'components/FriendListItem/FriendListItem';
 import './FriendList.css';
 
 class FriendList extends Component {
-  static defaulprops = {
+  static propTypes = {
     stats: PropTypes.arrayOf(
       PropTypes.shape({ id: PropTypes.number.isRequired })
     ),
