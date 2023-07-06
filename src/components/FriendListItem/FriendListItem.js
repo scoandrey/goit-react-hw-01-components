@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import './FriendListItem.css';
 
 class FriendListItem extends Component {
+  static defaulprops = {
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool,
+    id: PropTypes.number,
+  };
   render() {
     const { avatar, name, isOnline } = this.props.item;
     return (
@@ -16,10 +22,3 @@ class FriendListItem extends Component {
 }
 
 export default FriendListItem;
-
-FriendListItem.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
-  id: PropTypes.number,
-};

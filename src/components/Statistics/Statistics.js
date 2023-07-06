@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Statistics.css';
 class Statistics extends Component {
+  static defaulprops = {
+    title: PropTypes.string,
+    stats: PropTypes.array.isRequired,
+  };
   render() {
     const { title, stats } = this.props;
     return (
@@ -10,16 +14,11 @@ class Statistics extends Component {
           {title ? <h2 className="title">{title}</h2> : null}
           <ul className="stat-list">
             {stats.map(item => {
-              const r = Math.floor(Math.random() * 256);
-              const g = Math.floor(Math.random() * 256);
-              const b = Math.floor(Math.random() * 256);
-              const color =
-                '#' + r.toString(16) + g.toString(16) + b.toString(16);
               return (
                 <li
                   className="item"
                   key={item.id}
-                  style={{ backgroundColor: color }}
+                  style={{ backgroundColor: randomColor() }}
                 >
                   <span className="label">{item.label}</span>
                   <br />
@@ -34,9 +33,12 @@ class Statistics extends Component {
   }
 }
 
-export default Statistics;
+function randomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+  return color;
+}
 
-Statistics.propTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
-};
+export default Statistics;

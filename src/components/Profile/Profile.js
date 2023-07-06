@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Profile.css';
 
-
 class Profile extends Component {
+  static defaultProps = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.object.isRequired,
+  };
+
   render() {
     const { username, tag, location, avatar, stats } = this.props;
     return (
@@ -41,10 +48,3 @@ class Profile extends Component {
 
 export default Profile;
 
-Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
-};

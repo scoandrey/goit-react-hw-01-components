@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import './TransactionHistory.css';
 
 class TransactionHistory extends Component {
+  static defaulprops = {
+    items: PropTypes.array,
+  };
   render() {
     const { items } = this.props;
     return (
@@ -33,10 +36,3 @@ class TransactionHistory extends Component {
 }
 
 export default TransactionHistory;
-
-TransactionHistory.propTypes = {
-  type: PropTypes.string,
-  amount: PropTypes.string,
-  currency: PropTypes.string,
-  id: PropTypes.string,
-};
